@@ -61,14 +61,12 @@
           alt="background image"
           class="header__image"
         />
-        <div class="header__footer">
-          <div>
+
+          <div class="header__footer">
             <p>Hours:</p>
             <p>Monday – Friday (10:00 – 19:00)</p>
             <p>Saturday – Sunday (11:00 – 18:00)</p>
-          </div>
-
-          <div><p>200 Success Avenue, The Town of Practicum</p></div>
+            <p>200 Success Avenue, The Town of Practicum</p>
         </div>
       </header>
       <main class="content">
@@ -79,30 +77,40 @@
             convenience:
           </p>
 
-          <div class="recipes__videos">
-            <iframe
+          <ul class="recipes__videos">
+                  <li>
+                  <iframe
+                    class="recipes__video"
+                    class="recipes__iframe"
+                    width="480"
+                    height="273"
+                    src="https://www.youtube.com/embed/M7lc1UVf-VE"
+                    allowfullscreen
+                    >
+                  </iframe>
+<ul class="recipe__video-caption">
+                    <li class="recipe__video-caption_text">Aeropress recipe</li>
+                    <li class="recipe__video-caption_text">~5 min</li></ul>
+                </li>
+            <li >
+             <iframe
+             class="recipes__video"
               class="recipes__iframe"
               width="480"
               height="273"
-              src="https://www.youtube.com/embed/M7lc1UVf-VE"
+              src="https://www.youtube.com/embed/st571DYYTR8"
               allowfullscreen
-            ></iframe>
+             ></iframe>
+<ul class="recipe__video-caption">
+              <li class="recipe__video-caption_text">French press recipes</li>
+              <li class="recipe__video-caption_text">~15 min</li>
+</ul>
+            </li>
+          </ul>
+         </body>
 
-            <iframe
-              class="recipes__iframe"
-              width="480"
-              height="273"
-              src="https://www.youtube.com/embed/M7lc1UVf-VE"
-              allowfullscreen
-            ></iframe>
-            <div>
-            <p>Aeropress recipe</p>
-              <p>~5 min</p>
-        </div>
-        <div>
-             <p>French press recipes</p>
-              <p>~15 min</p></div>
-            </div>
+
+
 <div class="recipes__videos-row">
 
             </div>
