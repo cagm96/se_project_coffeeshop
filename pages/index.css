@@ -151,7 +151,7 @@
   list-style: none;
   margin-left: 0;
 }
-.recipe__video-caption {
+.recipe__video_caption {
   list-style: none;
   display: flex;
   justify-content: space-between;
