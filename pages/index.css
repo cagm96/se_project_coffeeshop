@@ -94,6 +94,9 @@
 }
 
 .header__paragraph {
+  flex-wrap: wrap;
+  z-index: 1;
+  align-self: flex-end;
 }
 
 .recipes {
