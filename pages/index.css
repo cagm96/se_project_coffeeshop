@@ -140,8 +140,8 @@
 .recipes__videos {
   width: 480px;
   height: 273px;
-  display: flex;
-  /* align-self: center; */
+  display: grid;
+  align-self: center;
   flex-direction: row;
   margin-top: 80px;
   margin-right: 0;
@@ -160,11 +160,7 @@
 }
 
 .reservation {
-  height: 100vh;
-  min-height: 720px;
-  max-height: 800px;
-  padding: 30px 80px 0;
-  position: relative;
+  padding-bottom: 120px;
   box-sizing: border-box;
   background-color: #d9e7ff;
   background-image: url("../images/background_reservation.svg");
@@ -175,11 +171,12 @@
   display: grid;
   flex-direction: row;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .reservation__title {
-  margin-bottom: 0;
-  margin-top: 100px;
+  margin: 0 auto;
+  padding-top: 100px;
   max-width: 385px;
 }
 
@@ -197,6 +194,7 @@
   padding-left: 0;
 }
 .form__label {
+  padding-bottom: 8px;
 }
 .form__input {
   height: 60px;
@@ -236,4 +234,6 @@
 .reservation__terms {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
+  padding-top: 32px;
 }
