@@ -193,10 +193,10 @@
   width: 385px;
   padding-left: 0;
 }
-.form__fieldset_label {
+.reservation__form_fieldset_label {
   padding-bottom: 8px;
 }
-.form__fieldset_input {
+.reservation__form_fieldset_input {
   height: 60px;
   border-radius: 4px;
   margin-bottom: 32px;
