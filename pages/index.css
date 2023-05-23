@@ -196,7 +196,7 @@
 .form__label {
   padding-bottom: 8px;
 }
-.form__input {
+.form__fieldset_input {
   height: 60px;
   border-radius: 4px;
   margin-bottom: 32px;
