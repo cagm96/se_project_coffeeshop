@@ -125,10 +125,8 @@
           <h1 class="reservation__title">Book a table</h1>
 
           <form class="reservation__form">
-            <fieldset class="reservation__form reservation__form_fieldset">
-              <label
-                for="name-input"
-                class="reservation__form_fieldset reservation__form_fieldset_label"
+            <fieldset class="reservation__form-fieldset">
+              <label for="name-input" class="reservation__form-fieldset-label"
                 >Name *</label
               >
               <input
@@ -136,12 +134,13 @@
                 id="name-input"
                 name="name"
                 placeholder="Name Surname"
-                class="reservation__form_fieldset reservation__form_fieldset_input"
+                class="reservation__form-fieldset-input"
                 required
               />
+
               <label
                 for="numberOfGuest-input"
-                class="reservation__form_fieldset reservation__form_fieldset_label"
+                class="reservation__form-fieldset-label"
                 >Number of guests*</label
               >
               <input
@@ -149,24 +148,24 @@
                 id="numberOfGuest-input"
                 name="numberOfGuest"
                 placeholder="1-8"
-                class="reservation__form_fieldset reservation__form_fieldset_input"
+                class="reservation__form-fieldset-input"
                 required
               />
+
               <label
-                for="date&time-input"
-                class="reservation__form_fieldset reservation__form_fieldset_label"
-                >Date & time *</label
+                for="date-time-input"
+                class="reservation__form-fieldset-label"
+                >Date &amp; time *</label
               >
               <input
                 type="datetime-local"
-                id="date&time-input"
-                name="date&time"
-                class="reservation__form_fieldset reservation__form_fieldset_input"
+                id="date-time-input"
+                name="date-time"
+                class="reservation__form-fieldset-input"
                 required
               />
-              <label
-                for="email-input"
-                class="reservation__form_fieldset reservation__form_fieldset_label"
+
+              <label for="email-input" class="reservation__form-fieldset-label"
                 >Your email *</label
               >
               <input
@@ -174,7 +173,7 @@
                 id="email-input"
                 name="email"
                 placeholder="email@email.com"
-                class="reservation__form_fieldset reservation__form_fieldset_input"
+                class="reservation__form-fieldset-input"
                 required
               />
             </fieldset>

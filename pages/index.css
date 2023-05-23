@@ -186,17 +186,17 @@
   margin-top: 100px;
 }
 
-.reservation__form_fieldset {
+.reservation__form-fieldset {
   display: flex;
   flex-direction: column;
   border: 0 none;
   width: 385px;
   padding-left: 0;
 }
-.reservation__form_fieldset_label {
+.reservation__form-fieldset-label {
   padding-bottom: 8px;
 }
-.reservation__form_fieldset_input {
+.reservation__form-fieldset-input {
   height: 60px;
   border-radius: 4px;
   margin-bottom: 32px;
