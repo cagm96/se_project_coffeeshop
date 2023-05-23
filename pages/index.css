@@ -203,11 +203,22 @@
 }
 .reservation__form-fieldset-label {
   padding-bottom: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 .reservation__form-fieldset-input {
   height: 60px;
   border-radius: 4px;
   margin-bottom: 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
 }
 .reservation__button {
   background-color: #2f80ed;
@@ -238,7 +249,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  margin-top: 0;
+  padding-top: 0;
 }
 .reservation__terms {
   display: flex;
