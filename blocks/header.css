@@ -1,0 +1,73 @@
+.header {
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  padding: 30px 80px 0;
+  position: relative;
+  box-sizing: border-box;
+  background-image: url("../images/background_header.svg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: inherit;
+}
+
+.header__logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 125px;
+  height: 142px;
+}
+
+.header__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  width: 729px;
+
+  padding-top: 202px;
+
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.header__span-accent {
+  font-family: "Noto  Serif";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 72px;
+  color: #2f80ed;
+  display: block;
+}
+
+.header__description {
+  width: 683px;
+  padding-top: 28px;
+}
+.header__image {
+  z-index: 1;
+  position: absolute;
+  max-width: 636px;
+  top: 135px;
+  right: 20px;
+}
+.header__footer {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 40px 80px 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header__paragraph {
+  flex-wrap: wrap;
+  z-index: 1;
+  align-self: flex-end;
+}
