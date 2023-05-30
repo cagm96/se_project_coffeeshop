@@ -38,11 +38,6 @@
   line-height: 20px;
   padding-top: 0;
 }
-.reservation__terms {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-}
 
 .form__button {
   background-color: #2f80ed;
