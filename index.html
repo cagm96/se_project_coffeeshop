@@ -63,10 +63,10 @@
         />
 
         <div class="header__footer">
-          <div class="header__paragraph">
-            <p>Hours:</p>
-            <p>Monday – Friday (10:00 – 19:00)</p>
-            <p>Saturday – Sunday (11:00 – 18:00)</p>
+          <div>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
+            <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
           </div>
           <p class="header__paragraph">
             200 Success Avenue, The Town of Practicum
@@ -85,30 +85,28 @@
             <li>
               <iframe
                 class="recipes__iframe"
-                width="480"
-                height="273"
                 src="https://www.youtube.com/embed/M7lc1UVf-VE"
                 allowfullscreen
               >
               </iframe>
-              <ul class="recipes__video-caption">
-                <li>Aeropress recipe</li>
-                <li>~5 min</li>
-              </ul>
+              <div class="recipes__video-caption">
+                <p class="recipes__video-caption_margin">Aeropress recipe</p>
+                <p class="recipes__video-caption_margin">~5 min</p>
+              </div>
             </li>
 
             <li>
               <iframe
                 class="recipes__iframe"
-                width="480"
-                height="273"
                 src="https://www.youtube.com/embed/st571DYYTR8"
                 allowfullscreen
               ></iframe>
-              <ul class="recipes__video-caption">
-                <li>French press recipes</li>
-                <li>~15 min</li>
-              </ul>
+              <div class="recipes__video-caption">
+                <p class="recipes__video-caption_margin">
+                  French press recipes
+                </p>
+                <p class="recipes__video-caption_margin">~15 min</p>
+              </div>
             </li>
           </ul>
         </section>
@@ -117,22 +115,18 @@
           <p class="reservation__title">Book a table</p>
 
           <form class="form reservation__form">
-            <fieldset class="reservation__form-fieldset">
-              <label for="name-input" class="reservation__form-fieldset-label"
-                >Name *</label
-              >
+            <fieldset class="form__fieldset">
+              <label for="name-input" class="form__label">Name *</label>
               <input
                 type="text"
                 id="name-input"
                 name="name"
                 placeholder="Name Surname"
-                class="reservation__form-fieldset-input"
+                class="form__input"
                 required
               />
 
-              <label
-                for="numberOfGuest-input"
-                class="reservation__form-fieldset-label"
+              <label for="numberOfGuest-input" class="form__label"
                 >Number of guests*</label
               >
               <input
@@ -140,24 +134,22 @@
                 id="numberOfGuest-input"
                 name="numberOfGuest"
                 placeholder="1-8"
-                class="reservation__form-fieldset-input"
+                class="form__input"
                 required
               />
 
-              <label
-                for="date-time-input"
-                class="reservation__form-fieldset-label"
+              <label for="date-time-input" class="reservation__label"
                 >Date &amp; time *</label
               >
               <input
                 type="datetime-local"
                 id="date-time-input"
                 name="date-time"
-                class="reservation__form-fieldset-input"
+                class="form__input"
                 required
               />
 
-              <label for="email-input" class="reservation__form-fieldset-label"
+              <label for="email-input" class="reservation__label"
                 >Your email *</label
               >
               <input
@@ -165,131 +157,131 @@
                 id="email-input"
                 name="email"
                 placeholder="email@email.com"
-                class="reservation__form-fieldset-input"
+                class="form__input"
                 required
               />
             </fieldset>
+            <fieldset class="form__fieldset">
+              <button type="submit" class="form__button">Book a table</button>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label class="form__label form__label_type_checkbox">
+                <input type="checkbox" class="form__checkbox" />
+                I agree with the terms of use
+              </label>
+            </fieldset>
           </form>
-          <button type="submit" class="reservation__button">
-            Book a Table
-          </button>
-          <div class="reservation__terms">
-            <label
-              for="agree"
-              class="reservation__terms reservation__terms_label"
-              >I agree with the terms of use</label
-            >
-            <input
-              type="checkbox"
-              name="choice"
-              id="agree"
-              value="agree"
-              class="reservation__terms reservation__terms_checkbox"
-            />
-          </div>
         </section>
         <section class="menu" id="menu">
-          <p class="menu__title">Menu</p>
+          <h3 class="menu__title">Menu</h3>
           <p class="menu__subtitle">
             We brew coffee from locally roasted, Fairtrade certified beans and
             use biodegradable cups. All teas from our collection are $2/cup.
           </p>
           <div class="menu__cards">
-            <ul class="card">
-              <li class="card__title">Filter</li>
-              <li class="card__list-item">
-                Regular (12 oz)
-                <span class="card__list-item-divider"></span>
-                $1
-              </li>
-              <li class="card__list-item">
-                Large (16 oz)
-                <span class="card__list-item-divider"></span>
-                $1.25
-              </li>
-              <li class="card__list-item">
-                XL (20 oz)
-                <span class="card__list-item-divider"></span>
-                $1.5
-              </li>
-              <li class="card__list-item">
-                Party-size (24 oz, decaf)
-                <span class="card__list-item-divider"></span>
-                $1.75
-              </li>
-              <li class="card__list-item">
-                Iced Coffee (16 oz)
-                <span class="card__list-item-divider"></span>
-                $1.25
-              </li>
-            </ul>
+            <div class="card">
+              <h3 class="card__title">Filter</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Regular (12 oz)
+                  <span class="card__list-item-divider"></span>
+                  $1
+                </li>
+                <li class="card__list-item">
+                  Large (16 oz)
+                  <span class="card__list-item-divider"></span>
+                  $1.25
+                </li>
+                <li class="card__list-item">
+                  XL (20 oz)
+                  <span class="card__list-item-divider"></span>
+                  $1.5
+                </li>
+                <li class="card__list-item">
+                  Party-size (24 oz, decaf)
+                  <span class="card__list-item-divider"></span>
+                  $1.75
+                </li>
+                <li class="card__list-item">
+                  Iced Coffee (16 oz)
+                  <span class="card__list-item-divider"></span>
+                  $1.25
+                </li>
+              </ul>
+            </div>
 
-            <ul class="card">
-              <li class="card__title">Espresso</li>
-              <li class="card__list-item">
-                Macchiato
-                <span class="card__list-item-divider"></span>
-                $2.25
-              </li>
-              <li class="card__list-item">
-                Cortado
-                <span class="card__list-item-divider"></span>
-                $2.5
-              </li>
-              <li class="card__list-item">
-                Mocha
-                <span class="card__list-item-divider"></span>
-                $3
-              </li>
-              <li class="card__list-item">
-                Sunrise in the Bay Area (decaf)
-                <span class="card__list-item-divider"></span>
-                $10
-              </li>
-            </ul>
+            <div class="card">
+              <h3 class="card__title">Expreso</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Macchiato
+                  <span class="card__list-item-divider"></span>
+                  $2.25
+                </li>
+                <li class="card__list-item">
+                  Cortado
+                  <span class="card__list-item-divider"></span>
+                  $2.5
+                </li>
+                <li class="card__list-item">
+                  Mocha
+                  <span class="card__list-item-divider"></span>
+                  $3
+                </li>
+                <li class="card__list-item">
+                  Sunrise in the Bay Area (decaf)
+                  <span class="card__list-item-divider"></span>
+                  $10
+                </li>
+              </ul>
+            </div>
 
-            <ul class="card">
-              <li class="card__title">Baked Goods</li>
-              <li class="card__list-item">
-                Almond Croissant
-                <span class="card__list-item-divider"></span>
-                $2
-              </li>
-              <li class="card__list-item">
-                Banana Bread
-                <span class="card__list-item-divider"></span>
-                $1.75
-              </li>
-              <li class="card__list-item">
-                Key Lime Pie
-                <span class="card__list-item-divider"></span>
-                $3
-              </li>
-              <li class="card__list-item">
-                Blue Velvet Cake
-                <span class="card__list-item-divider"></span>
-                $3.75
-              </li>
-              <li class="card__list-item">
-                Web Cookie
-                <span class="card__list-item-divider"></span>
-                $2
-              </li>
-              <li class="card__list-item">
-                Fresh Bug’uette
-                <span class="card__list-item-divider"></span>
-                $0.25
-              </li>
-            </ul>
+            <div class="card">
+              <h3 class="card__title" style="padding-top: 100px">
+                Baked Goods
+              </h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Almond Croissant
+                  <span class="card__list-item-divider"></span>
+                  $2
+                </li>
+                <li class="card__list-item">
+                  Banana Bread
+                  <span class="card__list-item-divider"></span>
+                  $1.75
+                </li>
+                <li class="card__list-item">
+                  Key Lime Pie
+                  <span class="card__list-item-divider"></span>
+                  $3
+                </li>
+                <li class="card__list-item">
+                  Blue Velvet Cake
+                  <span class="card__list-item-divider"></span>
+                  $3.75
+                </li>
+                <li class="card__list-item">
+                  Web Cookie
+                  <span class="card__list-item-divider"></span>
+                  $2
+                </li>
+                <li class="card__list-item">
+                  Fresh Bug’uette
+                  <span class="card__list-item-divider"></span>
+                  $0.25
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
         <section class="about">
           <div class="about__circle"></div>
           <div class="about__circle about__circle_animation_blurred"></div>
-          <p class="about__title">About the coffee shop</p>
+          <h3 class="about__title">About the coffee shop</h3>
 
           <div class="about__content">
-            <p class="about__paragraph" style="margin-top: 0px">
+            <p class="about__paragraph">
               Our coffee shop is located in the Practicum Library's hall. It
               features 6 tables and free WiFi.
             </p>
@@ -307,7 +299,7 @@
       <footer class="footer" id="contacts">
         <div class="footer__content">
           <img
-            src="../se_project_coffeeshop/images/practicum_logo.svg"
+            src="./images/practicum_logo.svg"
             alt="Practicum Library Logo"
             class="footer__logo"
           />
