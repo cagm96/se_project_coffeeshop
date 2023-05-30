@@ -33,7 +33,6 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -44,6 +43,7 @@
   column-gap: 40px;
   margin-top: 80px;
   padding-left: 0;
+  margin-bottom: 0;
   padding-bottom: 215px;
 }
 .recipes__iframe {

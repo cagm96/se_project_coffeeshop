@@ -18,4 +18,5 @@
 
 .nav__link:hover {
   color: #1f69c9;
+  transition: color 0.4s linear;
 }

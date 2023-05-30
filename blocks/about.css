@@ -31,7 +31,6 @@
   left: -129px;
 }
 .about__circle_animation_blurred {
-  background-color: #2f80ed;
   animation: pulsate 1.3s ease-in-out 0s infinite;
 }
 .about__title {
@@ -56,14 +55,10 @@
   max-width: 660px;
   padding-bottom: 0;
   margin-bottom: 0;
-  margin-top: 24px;
+
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-}
-
-.about__paragraph:last-of-type {
-  margin-bottom: 0;
 }
