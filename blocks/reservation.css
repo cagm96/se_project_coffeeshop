@@ -6,6 +6,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .reservation__title {
@@ -18,7 +20,7 @@
   font-size: 44px;
   line-height: 52px;
   position: relative;
-  justify-content: center;
+  padding-bottom: 80px;
 }
 
 .reservation__terms {
